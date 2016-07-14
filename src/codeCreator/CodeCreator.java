@@ -13,6 +13,7 @@ public class CodeCreator {
 
     private static CodeCreator codeCreator = null;
     private List<Point> coordinatesList = new ArrayList<>();
+    private int currentColor;
 
     private CodeCreator() {
     }
@@ -62,46 +63,75 @@ public class CodeCreator {
         return coordinatesList;
     }
 
+    private StringBuffer coordinatesListToPrint = new StringBuffer();
+
     public StringBuffer createListToPrint(java.util.List<Point> coordinatesList) {
 
-        StringBuffer coordinatesListToPrint = new StringBuffer();
-
-        int numOfPoint = 10;
-        int x;
-        int y;
-
-        coordinatesListToPrint.append("PROC main() \n");
+        coordinatesListToPrint.append(Constants.PROC_MAIN);
 
         for (int i = 0; i < coordinatesList.size(); i++) {
+            int currentXValue = coordinatesList.get(i).x;
+            int currentYValue = coordinatesList.get(i).y;
+
             if (i == 0) {
-                coordinatesListToPrint.append("     !Idź do punktu pierwszego p10 \n");
-                coordinatesListToPrint.append("     MoveL p10, v1000, z0, tool0; \n");
-
-                numOfPoint += 10;
-            } else if (i >= 1 && coordinatesList.get(i).x > 0) {
-
-                x = coordinatesList.get(i).x;
-                y = coordinatesList.get(i).y;
-
-                coordinatesListToPrint.append("     MoveL Offs (" + "p").append(numOfPoint).append(", ").append(x).append(", ").append(y).append(", ").append("0), v1000, z0, tool0;").append("\n");
-
-            } else if (coordinatesList.get(i).x < 0) {
-                coordinatesListToPrint.append("     !znalazłem -1 \n");
-
-                if (i < coordinatesList.size() - 1) {
-                    x = coordinatesList.get(i + 1).x;
-                    y = coordinatesList.get(i + 1).y;
-                    coordinatesListToPrint.append("     !Idź do punktu ").append(x).append(" ").append(y).append("będzie to p").append(numOfPoint).append("\n");
-                    coordinatesListToPrint.append("     MoveL p10, v1000, z0, tool0;" + "\n");
-                    i++;
-                } else if (i == coordinatesList.size() - 1) {
-                    coordinatesListToPrint.append("     !Zakończ" + "\n");
-                    coordinatesListToPrint.append("     MoveL p10, v1000, z0, tool0;" + "\n");
-                    coordinatesListToPrint.append("ENDPROC");
+                boolean changeDefaultColor = checkFirstPoint(currentXValue);
+                if (changeDefaultColor) {
+                    continue;
                 }
+            }
+            if (i == coordinatesList.size() - 1) {
+                coordinatesListToPrint.append(exitCode());
+                break;
+            }
+            if (currentXValue < 0) {
+                changeAction(currentXValue);
+            } else {
+                coordinatesListToPrint.append(setNextPoint(currentXValue, currentYValue)).append("\n");
             }
         }
         System.out.println(coordinatesListToPrint);
         return coordinatesListToPrint;
+    }
+
+    private void changeAction(int currentXValue) {
+
+        if (currentXValue != currentColor) {
+            for (CodeCreatorHelper codeCreatorHelper : CodeCreatorHelper.values()) {
+                if (codeCreatorHelper.getCommandId() == currentXValue) {
+                    coordinatesListToPrint.append(codeCreatorHelper.getCommand());
+                    if (currentXValue != CodeCreatorHelper.EndOfShape.getCommandId()) {
+                        currentColor = currentXValue;
+                    }
+                }
+            }
+        }
+    }
+
+    private boolean checkFirstPoint(int currentXValue) {
+        if (currentXValue > 0) {
+            coordinatesListToPrint.append(getStartCode());
+            return false;
+        } else {
+            coordinatesListToPrint.append(getStartCode());
+            return true;
+        }
+    }
+
+    private StringBuffer getStartCode() {
+        StringBuffer startPoint = new StringBuffer();
+        startPoint.append(Constants.GO_TO_FIRST_POINT_COMMENT);
+        return startPoint;
+    }
+
+    private StringBuffer setNextPoint(int x, int y) {
+        StringBuffer nextPoint = new StringBuffer();
+        nextPoint.append(Constants.MOVE_L_OFFS_P20_START_COMMAND).append(x).append(", ").append(y).append(Constants.MOVE_L_OFFS_P20_END_COMMAND);
+        return nextPoint;
+    }
+
+    private StringBuffer exitCode() {
+        StringBuffer exitCode = new StringBuffer();
+        exitCode.append(Constants.END_DRAWING);
+        return exitCode;
     }
 }

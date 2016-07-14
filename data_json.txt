@@ -1,27 +1,47 @@
 PROC main() 
      !Idź do punktu pierwszego p10 
      MoveL p10, v1000, z0, tool0; 
-     MoveL Offs (p20, 91, 41, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 87, 42, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 83, 43, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 80, 47, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 78, 51, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 77, 56, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 76, 60, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 76, 63, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 78, 65, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 80, 66, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 84, 66, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 87, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 90, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 92, 68, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 93, 70, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 92, 74, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 90, 78, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 88, 83, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 85, 88, 0), v1000, z0, tool0;
-     MoveL Offs (p20, 85, 88, 0), v1000, z0, tool0;
-     !znalazłem -1 
+     MoveL Offs (p20,107, 39, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 42, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 43, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 44, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 45, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 46, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 46, 0), v1000, z0, tool0;
+!koniec kształtu
+Orange
+     MoveL Offs (p20,89, 36, 0), v1000, z0, tool0;
+     MoveL Offs (p20,89, 37, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 38, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 39, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
+!koniec kształtu
+     MoveL Offs (p20,72, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,72, 31, 0), v1000, z0, tool0;
+     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
+     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
+     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
+!koniec kształtu
+Red
+     MoveL Offs (p20,125, 24, 0), v1000, z0, tool0;
+     MoveL Offs (p20,125, 26, 0), v1000, z0, tool0;
+     MoveL Offs (p20,125, 28, 0), v1000, z0, tool0;
+     MoveL Offs (p20,125, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,125, 32, 0), v1000, z0, tool0;
+     MoveL Offs (p20,125, 32, 0), v1000, z0, tool0;
+!koniec kształtu
+     MoveL Offs (p20,71, 68, 0), v1000, z0, tool0;
+     MoveL Offs (p20,73, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,75, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,78, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,80, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,81, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,84, 67, 0), v1000, z0, tool0;
+     MoveL Offs (p20,84, 67, 0), v1000, z0, tool0;
      !Zakończ
-     MoveL p10, v1000, z0, tool0;
+      MoveL p10, v1000, z0, tool0;
 ENDPROC
