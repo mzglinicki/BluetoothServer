@@ -1,7 +1,5 @@
 package bluetoothService;
 
-import bluetoothService.ProcessConnectionThread;
-
 import javax.bluetooth.DiscoveryAgent;
 import javax.bluetooth.LocalDevice;
 import javax.bluetooth.UUID;
@@ -10,7 +8,7 @@ import javax.microedition.io.StreamConnection;
 import javax.microedition.io.StreamConnectionNotifier;
 
 /**
- * Created by mzglinicki.96 on 18.04.2016.
+ * Created by mzglinicki.96 on 18.05.2016.
  */
 public class WaitThread implements Runnable {
 
@@ -42,6 +40,7 @@ public class WaitThread implements Runnable {
             e.printStackTrace();
             return;
         }
+
         // waiting for connection
         while (true) {
             try {
@@ -57,6 +56,3 @@ public class WaitThread implements Runnable {
         }
     }
 }
-
-
-

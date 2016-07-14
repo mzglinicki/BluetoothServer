@@ -1,7 +1,7 @@
 package bluetoothService;
 
 /**
- * Created by mzglinicki.96 on 17.04.2016.
+ * Created by mzglinicki.96 on 17.05.2016.
  */
 public class Main {
 
