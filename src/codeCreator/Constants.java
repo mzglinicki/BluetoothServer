@@ -17,4 +17,12 @@ public class Constants {
     public final static String GET_FOURTH_TOOL = "Red";
     public final static String GET_FIFTH_TOOL = "Orange";
     public final static String GET_SIXTH_TOOL = "Yellow";
+
+    public final static int END_OF_SHAPE_COMMAND_ID = -1;
+    public final static int FIRST_TOOL_COMMAND_ID = -2;
+    public final static int SECOND_TOOL_COMMAND_ID = -3;
+    public final static int THIRD_TOOL_COMMAND_ID = -4;
+    public final static int FOURTH_TOOL_COMMAND_ID = -5;
+    public final static int FIFTH_TOOL_COMMAND_ID = -6;
+    public final static int SIXTH_TOOL_COMMAND_ID = -7;
 }

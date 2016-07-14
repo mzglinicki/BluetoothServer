@@ -5,37 +5,37 @@ package codeCreator;
  */
 public enum CodeCreatorHelper {
 
-    EndOfShape(-1) {
+    EndOfShape(Constants.END_OF_SHAPE_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.END_OF_SHAPE_COMMENT);
         }
-    }, Black(-2) {
+    }, Black(Constants.FIRST_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_FIRST_TOOL);
         }
-    }, Green(-3) {
+    }, Green(Constants.SECOND_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_SECOND_TOOL);
         }
-    }, Blue(-4) {
+    }, Blue(Constants.THIRD_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_THIRD_TOOL);
         }
-    }, Red(-5) {
+    }, Red(Constants.FOURTH_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_FOURTH_TOOL);
         }
-    }, Orange(-6) {
+    }, Orange(Constants.FIFTH_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_FIFTH_TOOL);
         }
-    }, Yellow(-7) {
+    }, Yellow(Constants.SIXTH_TOOL_COMMAND_ID) {
         @Override
         public StringBuffer getCommand() {
             return createCommand(Constants.GET_SIXTH_TOOL);
