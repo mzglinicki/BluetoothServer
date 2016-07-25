@@ -1,47 +1,38 @@
+MODULE MainModule
+     CONST robtarget p10:=[[35.06,-46.07,-865.31],[0,0.401409,-0.915899,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget p20:=[[30.26,121.72,-865.31],[0,0.40142,-0.915894,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     CONST robtarget p30:=[[30.25,121.72,-914.80],[0,0.401409,-0.915899,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
 PROC main() 
-     !Idź do punktu pierwszego p10 
      MoveL p10, v1000, z0, tool0; 
-     MoveL Offs (p20,107, 39, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 40, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 42, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 43, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 44, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 45, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 46, 0), v1000, z0, tool0;
-     MoveL Offs (p20,107, 46, 0), v1000, z0, tool0;
+     MoveL Offs (p20,51, 27, 0), v1000, z0, tool0;
+     MoveL Offs (p20,49, 28, 0), v1000, z0, tool0;
+     MoveL Offs (p20,47, 28, 0), v1000, z0, tool0;
+     MoveL Offs (p20,46, 29, 0), v1000, z0, tool0;
+     MoveL Offs (p20,45, 29, 0), v1000, z0, tool0;
+     MoveL Offs (p20,44, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
 !koniec kształtu
-Orange
-     MoveL Offs (p20,89, 36, 0), v1000, z0, tool0;
-     MoveL Offs (p20,89, 37, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 38, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 39, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
-     MoveL Offs (p20,90, 40, 0), v1000, z0, tool0;
-!koniec kształtu
-     MoveL Offs (p20,72, 30, 0), v1000, z0, tool0;
-     MoveL Offs (p20,72, 31, 0), v1000, z0, tool0;
-     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
-     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
-     MoveL Offs (p20,73, 32, 0), v1000, z0, tool0;
-!koniec kształtu
-Red
-     MoveL Offs (p20,125, 24, 0), v1000, z0, tool0;
-     MoveL Offs (p20,125, 26, 0), v1000, z0, tool0;
-     MoveL Offs (p20,125, 28, 0), v1000, z0, tool0;
-     MoveL Offs (p20,125, 30, 0), v1000, z0, tool0;
-     MoveL Offs (p20,125, 32, 0), v1000, z0, tool0;
-     MoveL Offs (p20,125, 32, 0), v1000, z0, tool0;
-!koniec kształtu
-     MoveL Offs (p20,71, 68, 0), v1000, z0, tool0;
-     MoveL Offs (p20,73, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,75, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,78, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,80, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,81, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,84, 67, 0), v1000, z0, tool0;
-     MoveL Offs (p20,84, 67, 0), v1000, z0, tool0;
-     !Zakończ
-      MoveL p10, v1000, z0, tool0;
+     MoveL Offs (p20,98, 35, 0), v1000, z0, tool0;
+     MoveL Offs (p20,97, 37, 0), v1000, z0, tool0;
+     MoveL Offs (p20,96, 38, 0), v1000, z0, tool0;
+     MoveL Offs (p20,95, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,93, 41, 0), v1000, z0, tool0;
+     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
+     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
+     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
+     MoveL p10, v1000, z0, tool0;
 ENDPROC
+
+PROC getTool()
+     MoveL p10, v1000, z50, tool0;
+     MoveL p20, v1000, z50, tool0;
+     MoveL p30, v1000, z50, tool0;
+     WaitTime 1;
+     SetGO goMechGripper, 4;
+     WaitTime 1;
+     MoveL p20, v1000, z50, tool0;
+     MoveL p10, v1000, z50, tool0;
+ENDPROC
+

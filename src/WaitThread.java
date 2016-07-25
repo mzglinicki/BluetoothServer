@@ -1,5 +1,3 @@
-package bluetoothService;
-
 import javax.bluetooth.DiscoveryAgent;
 import javax.bluetooth.LocalDevice;
 import javax.bluetooth.UUID;
@@ -11,6 +9,8 @@ import javax.microedition.io.StreamConnectionNotifier;
  * Created by mzglinicki.96 on 18.05.2016.
  */
 public class WaitThread implements Runnable {
+
+    private volatile boolean stopThread = false;
 
     public WaitThread() {
     }
@@ -42,9 +42,9 @@ public class WaitThread implements Runnable {
         }
 
         // waiting for connection
-        while (true) {
+        while (!stopThread) {
             try {
-                System.out.println("waiting for connection...");
+                ServerPanel.getInstance().writeMessage(Constants.WAITING_FOR_INPUT_DATA);
                 connection = notifier.acceptAndOpen();
 
                 Thread processThread = new Thread(new ProcessConnectionThread(connection));
@@ -54,5 +54,10 @@ public class WaitThread implements Runnable {
                 return;
             }
         }
+
+    }
+
+    public void stopWaitingThread() {
+        stopThread = true;
     }
 }

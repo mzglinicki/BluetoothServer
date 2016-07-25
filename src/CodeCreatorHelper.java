@@ -1,5 +1,3 @@
-package codeCreator;
-
 /**
  * Created by mzglinicki.96 on 14.07.2016.
  */
