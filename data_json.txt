@@ -4,24 +4,23 @@ MODULE MainModule
      CONST robtarget p30:=[[30.25,121.72,-914.80],[0,0.401409,-0.915899,0],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
 PROC main() 
      MoveL p10, v1000, z0, tool0; 
-     MoveL Offs (p20,51, 27, 0), v1000, z0, tool0;
-     MoveL Offs (p20,49, 28, 0), v1000, z0, tool0;
-     MoveL Offs (p20,47, 28, 0), v1000, z0, tool0;
-     MoveL Offs (p20,46, 29, 0), v1000, z0, tool0;
-     MoveL Offs (p20,45, 29, 0), v1000, z0, tool0;
-     MoveL Offs (p20,44, 30, 0), v1000, z0, tool0;
-     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
-     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
-     MoveL Offs (p20,43, 30, 0), v1000, z0, tool0;
-!koniec kształtu
-     MoveL Offs (p20,98, 35, 0), v1000, z0, tool0;
-     MoveL Offs (p20,97, 37, 0), v1000, z0, tool0;
-     MoveL Offs (p20,96, 38, 0), v1000, z0, tool0;
-     MoveL Offs (p20,95, 40, 0), v1000, z0, tool0;
-     MoveL Offs (p20,93, 41, 0), v1000, z0, tool0;
-     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
-     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
-     MoveL Offs (p20,92, 43, 0), v1000, z0, tool0;
+     MoveL Offs (p20,103, 34, 0), v1000, z0, tool0;
+     MoveL Offs (p20,101, 38, 0), v1000, z0, tool0;
+     MoveL Offs (p20,100, 42, 0), v1000, z0, tool0;
+     MoveL Offs (p20,100, 47, 0), v1000, z0, tool0;
+     MoveL Offs (p20,101, 58, 0), v1000, z0, tool0;
+     MoveL Offs (p20,102, 60, 0), v1000, z0, tool0;
+     MoveL Offs (p20,104, 64, 0), v1000, z0, tool0;
+     MoveL Offs (p20,105, 66, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 68, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 70, 0), v1000, z0, tool0;
+     MoveL Offs (p20,107, 72, 0), v1000, z0, tool0;
+     MoveL Offs (p20,106, 75, 0), v1000, z0, tool0;
+     MoveL Offs (p20,104, 77, 0), v1000, z0, tool0;
+     MoveL Offs (p20,102, 81, 0), v1000, z0, tool0;
+     MoveL Offs (p20,99, 86, 0), v1000, z0, tool0;
+     MoveL Offs (p20,98, 87, 0), v1000, z0, tool0;
+     MoveL Offs (p20,98, 87, 0), v1000, z0, tool0;
      MoveL p10, v1000, z0, tool0;
 ENDPROC
 

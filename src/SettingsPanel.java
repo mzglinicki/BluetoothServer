@@ -23,14 +23,19 @@ public class SettingsPanel {
     private JLabel imageLabel;
     private JCheckBox warehouseCheckBox;
     private JCheckBox paperCoordinatesCheckBox;
+    private JPanel warehouseCoordinates;
+    private JPanel warehouseSettings;
+    private JPanel gripsPanel;
+    private JPanel paperSettings;
+    private JPanel buttonsPanel;
+    private JPanel paperPresentPanel;
+    private JPanel paperFormatJPanel;
+    private JPanel paperOrientationJPanel;
+    private JPanel paperStartCoordinates;
 
     private static SettingsPanel settingsPanel = null;
     private MainGUIFrame mainFrame;
     private ServerPanel serverPanel;
-    private ButtonGroup toolPresenceBG;
-    private ButtonGroup paperPresenceBG;
-    private ButtonGroup paperFormatBG;
-    private ButtonGroup paperOrientationBG;
 
     public static SettingsPanel getInstance() {
         if (settingsPanel == null) {
@@ -47,7 +52,7 @@ public class SettingsPanel {
         checkSettings();
     }
 
-    public void setMainGUIFrame( final MainGUIFrame mainFrame) {
+    public void setMainGUIFrame(final MainGUIFrame mainFrame) {
         this.mainFrame = mainFrame;
     }
 
@@ -78,10 +83,10 @@ public class SettingsPanel {
 
     private void setupRadioButtonGroups() {
 
-        toolPresenceBG = createButtonGroup(toolInstalled, toolNotInstalled);
-        paperPresenceBG = createButtonGroup(paperInstalled, paperNotInstalled);
-        paperFormatBG = createButtonGroup(a4PaperFormat, a3PaperFormat);
-        paperOrientationBG = createButtonGroup(horizontally, vertically);
+        createButtonGroup(toolInstalled, toolNotInstalled);
+        createButtonGroup(paperInstalled, paperNotInstalled);
+        createButtonGroup(a4PaperFormat, a3PaperFormat);
+        createButtonGroup(horizontally, vertically);
 
         setupRadioButtonChangeStateListener();
     }
