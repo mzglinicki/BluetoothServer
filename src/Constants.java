@@ -39,6 +39,5 @@ public class Constants {
     public static final int FIFTH_TOOL_COMMAND_ID = -6;
     public static final int SIXTH_TOOL_COMMAND_ID = -7;
 
-
     public static final String DELTA_TITLE = "Delta Draw";
 }

@@ -22,6 +22,10 @@ public class WaitThread implements Runnable {
 
     private void waitingForConnection() {
 
+        final String localhost = "btspp://localhost:";
+        final String uuidValue = "04c6093b00001000800000805f9b34fb";
+        final String remoteBluetooth = ";name=RemoteBluetooth";
+
         // retrieve the local Bluetooth device object
         LocalDevice localDevice;
         StreamConnectionNotifier notifier;
@@ -32,8 +36,8 @@ public class WaitThread implements Runnable {
             localDevice = LocalDevice.getLocalDevice();
             localDevice.setDiscoverable(DiscoveryAgent.GIAC);
 
-            UUID uuid = new UUID("04c6093b00001000800000805f9b34fb", false);
-            String url = "btspp://localhost:" + uuid.toString() + ";name=RemoteBluetooth";
+            final UUID uuid = new UUID(uuidValue, false);
+            final String url = localhost + uuid.toString() + remoteBluetooth;
             notifier = (StreamConnectionNotifier) Connector.open(url);
 
         } catch (Exception e) {
@@ -54,7 +58,6 @@ public class WaitThread implements Runnable {
                 return;
             }
         }
-
     }
 
     public void stopWaitingThread() {

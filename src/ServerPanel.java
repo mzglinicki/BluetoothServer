@@ -10,7 +10,7 @@ public class ServerPanel {
     private JPanel mainServerJPane;
     private JTextArea codeTextArea;
     private JButton clearBtn;
-    private JButton writeToFileBtn;
+    private JButton saveBtn;
     private JButton backBtn;
     private JLabel messagesLabel;
 
@@ -19,9 +19,8 @@ public class ServerPanel {
     private static ServerPanel serverPanel = null;
     private MainGUIFrame mainFrame;
 
-
     private ServerPanel() {
-        setupButtonListeners();
+        setupButtonsClickListeners();
         setupCodeTextArea();
     }
 
@@ -32,42 +31,45 @@ public class ServerPanel {
         return serverPanel;
     }
 
-    public JPanel getMainPanel() {
-        return mainServerJPane;
-    }
-
     public JTextArea getCodeTextArea() {
         return codeTextArea;
-    }
-
-    public void writeMessage(String message) {
-        messagesLabel.setText(message);
     }
 
     private void setupCodeTextArea() {
         codeTextArea.setMargin(new Insets(CODE_TEXT_AREA_MARGIN, CODE_TEXT_AREA_MARGIN, CODE_TEXT_AREA_MARGIN, CODE_TEXT_AREA_MARGIN));
     }
 
-    public void setMainGUIFrame(MainGUIFrame mainFrame) {
+    public JPanel getMainPanel() {
+        return mainServerJPane;
+    }
+
+    public void setMainGUIFrame(final MainGUIFrame mainFrame) {
         this.mainFrame = mainFrame;
     }
 
-    private void setupButtonListeners() {
+    public void writeMessage(final String message) {
+        messagesLabel.setText(message);
+    }
 
-        writeToFileBtn.addActionListener(e -> {
-            writeMessage(Constants.SAVED_DATA_INFO);
-            CodeCreator.getInstance().writeDataToFile();
-        });
+    private void setupButtonsClickListeners() {
 
-        clearBtn.addActionListener(e1 -> {
-            writeMessage(Constants.WAITING_FOR_INPUT_DATA);
-            codeTextArea.setText("" + '\u0000');
-        });
+        saveBtn.addActionListener(e -> onSaveBtnClick());
+        clearBtn.addActionListener(e -> onClearBtnClick());
+        backBtn.addActionListener(e -> onBackBtnClick());
+    }
 
-        backBtn.addActionListener(e -> {
-            SettingsPanel settingsPanel = SettingsPanel.getInstance();
-            ConnectionManager.getInstance().stopThread();
-            mainFrame.changeView(settingsPanel.getMainSettingsJPanel());
-        });
+    private void onSaveBtnClick() {
+        writeMessage(Constants.SAVED_DATA_INFO);
+        CodeCreator.getInstance().writeDataToFile();
+    }
+
+    private void onClearBtnClick() {
+        writeMessage(Constants.WAITING_FOR_INPUT_DATA);
+        codeTextArea.setText("" + '\u0000');
+    }
+
+    private void onBackBtnClick() {
+        ConnectionManager.getInstance().stopThread();
+        mainFrame.changeView(SettingsPanel.getInstance().getMainSettingsJPanel());
     }
 }

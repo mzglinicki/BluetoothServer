@@ -20,7 +20,7 @@ public class ProcessConnectionThread extends Thread {
     @Override
     public void run() {
         try {
-            InputStream inputStream = connection.openInputStream();
+            final InputStream inputStream = connection.openInputStream();
             byte[] data = new byte[BYTES];
             int bytesRead;
 
@@ -39,7 +39,7 @@ public class ProcessConnectionThread extends Thread {
         }
     }
 
-    private void processCommand(String command) {
+    private void processCommand(final String command) {
 
         try {
             CodeCreator.getInstance().createCode(command);

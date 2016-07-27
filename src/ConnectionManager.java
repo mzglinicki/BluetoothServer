@@ -22,7 +22,7 @@ public class ConnectionManager {
     }
 
     public void stopThread() {
-        WaitThread waitThread = new WaitThread();
+        final WaitThread waitThread = new WaitThread();
         waitThread.stopWaitingThread();
     }
 }

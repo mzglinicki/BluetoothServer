@@ -52,8 +52,8 @@ public enum CodeCreatorHelper {
         return commandId;
     }
 
-    private static StringBuffer createCommand(String command) {
-        StringBuffer newCommand = new StringBuffer();
+    private static StringBuffer createCommand(final String command) {
+        final StringBuffer newCommand = new StringBuffer();
         newCommand.append(command).append("\n");
         return newCommand;
     }

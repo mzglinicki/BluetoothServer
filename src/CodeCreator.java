@@ -57,7 +57,7 @@ public class CodeCreator {
         codeTextArea.setText(toPrint.toString());
     }
 
-    public List<Point> rescaleDraw(String listOfPoints) {
+    public List<Point> rescaleDraw(final String listOfPoints) {
 
         final List<Point> originalCoordinates = splitString(listOfPoints);
         final List<Point> rescaledCoordinates = new ArrayList<>();
@@ -150,26 +150,25 @@ public class CodeCreator {
             coordinatesListToPrint.append(getStartCode());
             return false;
         } else {
-
             coordinatesListToPrint.append(getStartCode());
             return true;
         }
     }
 
     private StringBuffer getStartCode() {
-        StringBuffer startPoint = new StringBuffer();
+        final StringBuffer startPoint = new StringBuffer();
         startPoint.append(Constants.GO_TO_FIRST_POINT_COMMENT);
         return startPoint;
     }
 
     private StringBuffer setNextPoint(final int x, final int y) {
-        StringBuffer nextPoint = new StringBuffer();
+        final StringBuffer nextPoint = new StringBuffer();
         nextPoint.append(Constants.MOVE_L_OFFS_P20_START_COMMAND).append(x).append(", ").append(y).append(Constants.MOVE_L_OFFS_P20_END_COMMAND);
         return nextPoint;
     }
 
     private StringBuffer exitCode() {
-        StringBuffer exitCode = new StringBuffer();
+        final StringBuffer exitCode = new StringBuffer();
         exitCode.append(Constants.END_DRAWING);
         exitCode.append(Constants.ENDPROC);
         return exitCode;
@@ -189,12 +188,12 @@ public class CodeCreator {
         coordinatesListToPrint.append(Constants.ENDPROC);
     }
 
-    private void leaveToolInWarehouse(){
-
+    private void leaveToolInWarehouse() {
+        //TODO
     }
 
-    private void changeTool(){
-
+    private void changeTool() {
+        //TODO
     }
 
     public void printConstPoints() {

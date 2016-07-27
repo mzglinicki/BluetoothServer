@@ -1,38 +1,36 @@
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumnModel;
+import java.net.URL;
 
 /**
  * Created by mzglinicki.96 on 23.07.2016.
  */
 public class SettingsPanel {
     private JPanel mainSettingsJPanel;
-    private JPanel warehouseSettings;
     private JButton turnOnBtn;
     private JButton closeBtn;
-    private JRadioButton toolInstaled;
+    private JRadioButton toolInstalled;
     private JRadioButton toolNotInstalled;
-    private JRadioButton takRadioButton2;
-    private JRadioButton nieRadioButton1;
-    private JRadioButton a4RadioButton;
-    private JRadioButton a3RadioButton;
-    private JRadioButton poziomaRadioButton;
-    private JRadioButton pionowaRadioButton;
+    private JRadioButton paperInstalled;
+    private JRadioButton paperNotInstalled;
+    private JRadioButton a4PaperFormat;
+    private JRadioButton a3PaperFormat;
+    private JRadioButton horizontally;
+    private JRadioButton vertically;
     private JTable paperCornerCoordinates;
     private JTable warehouseCoordinatesTable;
-    private JPanel paperSettings;
-    private JPanel buttonsPanel;
-    private JPanel warehouseCoordinates;
-    private JPanel gripsPanel;
-    private JPanel paperPresentPanel;
-    private JPanel paperFormat;
-    private JPanel paperOrientation;
-    private JPanel paperStartCoordinates;
+    private JLabel imageLabel;
+    private JCheckBox warehouseCheckBox;
+    private JCheckBox paperCoordinatesCheckBox;
 
     private static SettingsPanel settingsPanel = null;
     private MainGUIFrame mainFrame;
     private ServerPanel serverPanel;
+    private ButtonGroup toolPresenceBG;
+    private ButtonGroup paperPresenceBG;
+    private ButtonGroup paperFormatBG;
+    private ButtonGroup paperOrientationBG;
 
     public static SettingsPanel getInstance() {
         if (settingsPanel == null) {
@@ -42,11 +40,14 @@ public class SettingsPanel {
     }
 
     private SettingsPanel() {
-        setupButtonListeners();
-        createWarehouseCoordinatesTable();
+
+        setDefaultSettings();
+        setupRadioButtonGroups();
+        setupButtonsListeners();
+        checkSettings();
     }
 
-    public void setMainGUIFrame(MainGUIFrame mainFrame) {
+    public void setMainGUIFrame( final MainGUIFrame mainFrame) {
         this.mainFrame = mainFrame;
     }
 
@@ -54,7 +55,122 @@ public class SettingsPanel {
         return mainSettingsJPanel;
     }
 
-    private void setupButtonListeners() {
+    private void checkSettings() {
+
+        if (paperInstalled.isSelected() && warehouseCheckBox.isSelected() && paperCoordinatesCheckBox.isSelected()) {
+            turnOnBtn.setEnabled(true);
+        } else {
+            turnOnBtn.setEnabled(false);
+        }
+    }
+
+    private void setDefaultSettings() {
+
+        createWarehouseCoordinatesTable();
+        createPaperCornerCoordinatesTable();
+
+        toolNotInstalled.setSelected(true);
+        paperNotInstalled.setSelected(true);
+        a4PaperFormat.setSelected(true);
+        vertically.setSelected(true);
+        turnOnBtn.setEnabled(false);
+    }
+
+    private void setupRadioButtonGroups() {
+
+        toolPresenceBG = createButtonGroup(toolInstalled, toolNotInstalled);
+        paperPresenceBG = createButtonGroup(paperInstalled, paperNotInstalled);
+        paperFormatBG = createButtonGroup(a4PaperFormat, a3PaperFormat);
+        paperOrientationBG = createButtonGroup(horizontally, vertically);
+
+        setupRadioButtonChangeStateListener();
+    }
+
+    private ButtonGroup createButtonGroup(final JRadioButton firstButton, final JRadioButton secondButton) {
+
+        final ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(firstButton);
+        buttonGroup.add(secondButton);
+        return buttonGroup;
+    }
+
+    private void onToolPresenceBGClick() {
+
+    }
+
+    private void onPaperPresenceBGClick() {
+        paperInstalled.addActionListener(e -> checkSettings());
+        paperNotInstalled.addActionListener(e -> checkSettings());
+    }
+
+    private void onPaperFormatBGClick() {
+
+        final String a4Icon = "images/paperA4.png";
+        final String a3Icon = "images/paperA3.png";
+
+        final boolean[] a4Format = {true};
+
+        a4PaperFormat.addActionListener(e -> {
+
+            if (a4PaperFormat.isSelected() && !a4Format[0]) {
+                setupNewIcon(getClass().getResource(a4Icon));
+                a4Format[0] = true;
+            }
+        });
+
+        a3PaperFormat.addActionListener(e -> {
+
+            if (a3PaperFormat.isSelected() && a4Format[0]) {
+                setupNewIcon(getClass().getResource(a3Icon));
+                a4Format[0] = false;
+            }
+        });
+    }
+
+    private void setupNewIcon(final URL iconURL) {
+
+        imageLabel.setIcon(new ImageIcon(iconURL));
+        if (horizontally.isSelected()) {
+            imageLabel.setIcon(rotateIcon(RotatedIcon.Rotate.UP));
+        }
+    }
+
+    private Icon rotateIcon(final RotatedIcon.Rotate rotateDirection) {
+        return new RotatedIcon(imageLabel.getIcon(), rotateDirection);
+    }
+
+    private void onPaperOrientationBGClick() {
+
+        final boolean[] orientationVertically = {true};
+
+        horizontally.addActionListener(e -> {
+            if (horizontally.isSelected() && orientationVertically[0]) {
+                imageLabel.setIcon(rotateIcon(RotatedIcon.Rotate.UP));
+                orientationVertically[0] = false;
+            }
+        });
+
+        vertically.addActionListener(e ->
+        {
+            if (vertically.isSelected() && !orientationVertically[0]) {
+                imageLabel.setIcon(rotateIcon(RotatedIcon.Rotate.DOWN));
+                orientationVertically[0] = true;
+            }
+        });
+    }
+
+    private void setupRadioButtonChangeStateListener() {
+
+        onToolPresenceBGClick();
+        onPaperPresenceBGClick();
+        onPaperFormatBGClick();
+        onPaperOrientationBGClick();
+
+        warehouseCheckBox.addActionListener(e -> checkSettings());
+        paperCoordinatesCheckBox.addActionListener(e -> checkSettings());
+    }
+
+    private void setupButtonsListeners() {
 
         turnOnBtn.addActionListener(e -> {
             ConnectionManager.getInstance().startWaitThread();
@@ -67,23 +183,36 @@ public class SettingsPanel {
 
     private void createWarehouseCoordinatesTable() {
 
-        String[] columns = {"", "1", "2", "3", "4", "5,", "6"};
+        String[] columns = {"", "1", "2", "3", "4", "5", "6"};
 
         Object[][] data = {
-                {""},
                 {"x", "10", "20", "30", "40", "50", "60"},
-                {"y", "10", "20", "30", "40", "50", "60"},
-                {"z", "10", "20", "30", "40", "50", "60"}};
+                {"y", "30", "30", "30", "30", "30", "30"},
+                {"z", "20", "20", "20", "20", "20", "20"}};
 
-        DefaultTableModel model = new DefaultTableModel(data, columns) {
-
-            @Override
-            public boolean isCellEditable(int row, int column)
-            {
-                return false;
-            }
-        };
+        final DefaultTableModel model = new DefaultTableModel(data, columns);
         warehouseCoordinatesTable.setModel(model);
+    }
 
+    private void createPaperCornerCoordinatesTable() {
+
+        String[] columns = {"x", "y"};
+
+        Object[][] data = {
+                {"10", "10"},
+                {"10", "10"}};
+        createTable(columns, data);
+    }
+
+    private void createTable(final String[] columns, final Object[][] data) {
+        final DefaultTableModel model = new DefaultTableModel(data, columns);
+        paperCornerCoordinates.setModel(model);
+        paperCornerCoordinates.setDefaultRenderer(Object.class, setupCellRenderer());
+    }
+
+    private DefaultTableCellRenderer setupCellRenderer() {
+        final DefaultTableCellRenderer cellRenderer = new DefaultTableCellRenderer();
+        cellRenderer.setHorizontalAlignment(SwingConstants.CENTER);
+        return cellRenderer;
     }
 }

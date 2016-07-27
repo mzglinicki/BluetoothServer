@@ -8,20 +8,18 @@ public class MainGUIFrame extends JFrame {
 
     private static MainGUIFrame guiFrame = null;
 
-    private final static int WINDOW_X_POSITION = 50;
-    private final static int WINDOW_y_POSITION = 50;
+    private final static int WINDOW_X_POSITION = 20;
+    private final static int WINDOW_y_POSITION = 20;
     private final static int WINDOW_WIDTH = 700;
-    private final static int WINDOW_HEIGHT = 700;
+    private final static int WINDOW_HEIGHT = 730;
 
     private SettingsPanel settingsPanel;
-    private ServerPanel serverPanel;
 
     private MainGUIFrame() {
         settingsPanel = SettingsPanel.getInstance();
         settingsPanel.setMainGUIFrame(this);
-        serverPanel = ServerPanel.getInstance();
-        serverPanel.setMainGUIFrame(this);
 
+        ServerPanel.getInstance().setMainGUIFrame(this);
         setupMainPane();
     }
 
