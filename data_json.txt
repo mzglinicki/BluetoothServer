@@ -21,6 +21,19 @@ PROC main()
      MoveL Offs (p20,99, 86, 0), v1000, z0, tool0;
      MoveL Offs (p20,98, 87, 0), v1000, z0, tool0;
      MoveL Offs (p20,98, 87, 0), v1000, z0, tool0;
+!koniec kształtu
+Red
+getTool();
+     MoveL Offs (p20,82, 30, 0), v1000, z0, tool0;
+     MoveL Offs (p20,81, 31, 0), v1000, z0, tool0;
+     MoveL Offs (p20,81, 33, 0), v1000, z0, tool0;
+     MoveL Offs (p20,81, 35, 0), v1000, z0, tool0;
+     MoveL Offs (p20,80, 38, 0), v1000, z0, tool0;
+     MoveL Offs (p20,80, 40, 0), v1000, z0, tool0;
+     MoveL Offs (p20,79, 43, 0), v1000, z0, tool0;
+     MoveL Offs (p20,79, 46, 0), v1000, z0, tool0;
+     MoveL Offs (p20,78, 48, 0), v1000, z0, tool0;
+     MoveL Offs (p20,78, 48, 0), v1000, z0, tool0;
      MoveL p10, v1000, z0, tool0;
 ENDPROC
 
