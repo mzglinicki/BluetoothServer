@@ -32,7 +32,7 @@ public class ToolManager {
         return tools;
     }
 
-    public List<Tool> createListOfTool() {
+    public void createListOfTool() {
         tools = new ArrayList<>();
         int toolId = -2;
 
@@ -41,6 +41,5 @@ public class ToolManager {
             tools.add(new Tool(toolId, coordinates.get(x), coordinates.get(y), coordinates.get(z)));
             --toolId;
         }
-        return tools;
     }
 }

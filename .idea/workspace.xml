@@ -7,49 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="860b0b0b-fad2-4d76-b78a-3d0b87b4c8ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/ButtonManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/ModelManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Tool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/ToolManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/StartPanel.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/StartPanel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/CodeCreatorHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/ConnectionManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/MainGUIFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/ProcessConnectionThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/RotatedIcon$Rotate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/RotatedIcon.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/ServerPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/SettingsPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/WaitThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CodeCreator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/CodeCreatorHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/ConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/ProcessConnectionThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/WaitThread.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Server_jar/BluetoothServer.jar" afterPath="$PROJECT_DIR$/out/artifacts/Server_jar/BluetoothServer.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/controller/ButtonManager.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/controller/ButtonManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/images/delta.png" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/images/delta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/Constants.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/model/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/ModelManager.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/model/ModelManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/Tool.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/model/Tool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/model/ToolManager.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/model/ToolManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/view/MainGUIFrame.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/view/MainGUIFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/view/SettingsPanel.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/view/SettingsPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/view/StartPanel.class" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/view/StartPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/images/delta.png" afterPath="$PROJECT_DIR$/src/images/delta.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_json.txt" afterPath="$PROJECT_DIR$/data_json.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BluetoothServer/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/BluetoothServer/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CodeCreatorHelper.java" afterPath="$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/model/btConection/ConnectionManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Constants.java" afterPath="$PROJECT_DIR$/src/model/Constants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/controller/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MainGUIFrame.java" afterPath="$PROJECT_DIR$/src/view/MainGUIFrame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ProcessConnectionThread.java" afterPath="$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/RotatedIcon.java" afterPath="$PROJECT_DIR$/src/model/RotatedIcon.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ServerPanel.form" afterPath="$PROJECT_DIR$/src/view/ServerPanel.form" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ServerPanel.java" afterPath="$PROJECT_DIR$/src/view/ServerPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SettingsPanel.form" afterPath="$PROJECT_DIR$/src/view/SettingsPanel.form" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SettingsPanel.java" afterPath="$PROJECT_DIR$/src/view/SettingsPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/WaitThread.java" afterPath="$PROJECT_DIR$/src/model/btConection/WaitThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ButtonManager.java" afterPath="$PROJECT_DIR$/src/controller/ButtonManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Constants.java" afterPath="$PROJECT_DIR$/src/model/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ModelManager.java" afterPath="$PROJECT_DIR$/src/model/ModelManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ToolManager.java" afterPath="$PROJECT_DIR$/src/model/ToolManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/btConection/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/model/btConection/ConnectionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java" afterPath="$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/btConection/WaitThread.java" afterPath="$PROJECT_DIR$/src/model/btConection/WaitThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java" afterPath="$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java" afterPath="$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/SettingsPanel.form" afterPath="$PROJECT_DIR$/src/view/SettingsPanel.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/SettingsPanel.java" afterPath="$PROJECT_DIR$/src/view/SettingsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/StartPanel.java" afterPath="$PROJECT_DIR$/src/view/StartPanel.java" />
     </list>
     <ignored path="BluetoothServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +59,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BluetoothServer$Main.coverage" NAME="Main Coverage Results" MODIFIED="1469738197362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BluetoothServer$Main.coverage" NAME="Main Coverage Results" MODIFIED="1470904631875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -74,29 +70,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CodeCreator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WaitThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8252788">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <folding>
+                <element signature="docComment;class#WaitThread#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6714579">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#CodeCreator#0" expanded="false" />
                 <element signature="method#getInstance#0;class#CodeCreator#0" expanded="false" />
-                <element signature="method#prepareInputData#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#creteCode#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#writeDataToFile#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#setupPaperFormat#0;class#CodeCreator#0" expanded="false" />
-                <element signature="method#rescaleDraw#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#checkOrientation#0;class#CodeCreator#0" expanded="false" />
-                <element signature="method#splitString#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#createListToPrint#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#checkIfLastPoint#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#checkFirstPoint#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#startDrawNewShape#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#changeAction#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#changeTool#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#getGetToolMethod#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#getStartCode#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#setNextPoint#0;class#CodeCreator#0" expanded="false" />
+                <element signature="method#getExitCode#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#getToolFromWarehouse#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#printSummary#0;class#CodeCreator#0" expanded="false" />
-                <element signature="method#printWarehouseSettingsInfo#0;class#CodeCreator#0" expanded="false" />
-                <element signature="method#printIfNoColorChanging#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#printPaperOrientationInfo#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#printPaperFormatInfo#0;class#CodeCreator#0" expanded="false" />
                 <element signature="method#printGripperInfo#0;class#CodeCreator#0" expanded="false" />
@@ -106,11 +115,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
+      <file leaf-file-name="ButtonManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ButtonManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+              <folding>
+                <element signature="e#3480#3481#0" expanded="true" />
+                <element signature="e#3558#3559#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/btConection/ConnectionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -120,33 +142,11 @@
         <entry file="file://$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
-                <element signature="docComment;class#ProcessConnectionThread#0" expanded="false" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeCreatorHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-              <folding>
-                <element signature="docComment;class#CodeCreatorHelper#0" expanded="false" />
-                <element signature="method#createCommand#0;class#CodeCreatorHelper#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ModelManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -172,9 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bluetoothService/Constants.java" />
-        <option value="$PROJECT_DIR$/src/bluetoothService/WaitThread.java" />
-        <option value="$PROJECT_DIR$/src/codeCreator/CodeCreator.java" />
         <option value="$PROJECT_DIR$/src/codeCreator/Constants.java" />
         <option value="$PROJECT_DIR$/src/codeCreator/CodeCreatorHelper.java" />
         <option value="$PROJECT_DIR$/src/MainPanelGui.form" />
@@ -188,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/MainGuiPanel.java" />
         <option value="$PROJECT_DIR$/src/SettingsForm.java" />
         <option value="$PROJECT_DIR$/src/ServerPanel.form" />
-        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/RotatedIcon.java" />
         <option value="$PROJECT_DIR$/src/ServerPanel.java" />
         <option value="$PROJECT_DIR$/src/WaitThread.java" />
@@ -211,18 +207,22 @@
         <option value="$PROJECT_DIR$/src/view/ServerPanel.java" />
         <option value="$PROJECT_DIR$/src/model/RotatedIcon.java" />
         <option value="$PROJECT_DIR$/src/controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/controller/ButtonManager.java" />
-        <option value="$PROJECT_DIR$/src/view/SettingsPanel.java" />
-        <option value="$PROJECT_DIR$/src/view/StartPanel.java" />
         <option value="$PROJECT_DIR$/src/model/CodeCreator.java" />
-        <option value="$PROJECT_DIR$/src/view/MainGUIFrame.java" />
-        <option value="$PROJECT_DIR$/src/model/ModelManager.java" />
-        <option value="$PROJECT_DIR$/src/model/btConection/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/model/Tool.java" />
         <option value="$PROJECT_DIR$/src/model/ToolManager.java" />
+        <option value="$PROJECT_DIR$/src/view/SettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java" />
-        <option value="$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java" />
+        <option value="$PROJECT_DIR$/src/view/StartPanel.java" />
+        <option value="$PROJECT_DIR$/src/view/SettingsPanel.form" />
+        <option value="$PROJECT_DIR$/src/view/MainGUIFrame.java" />
         <option value="$PROJECT_DIR$/src/model/Constants.java" />
         <option value="$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java" />
+        <option value="$PROJECT_DIR$/src/model/ModelManager.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/model/btConection/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java" />
+        <option value="$PROJECT_DIR$/src/controller/ButtonManager.java" />
+        <option value="$PROJECT_DIR$/src/model/btConection/WaitThread.java" />
       </list>
     </option>
   </component>
@@ -264,7 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -279,6 +279,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,7 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,17 +344,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeCreator" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -697,28 +693,53 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20746268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15522388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7466468" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06119403" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1880597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016417911" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22686568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.035820894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1880597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.015015015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7466468" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572079" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25225225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22686568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -741,75 +762,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/SettingsPanel.java</url>
-          <line>107</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/btConection/WaitThread.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="98" />
+      <option name="time" value="126" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="horizontally.isSelected()" language="JAVA" custom="" />
-        <watch expression="iconURL" language="JAVA" custom="" />
-        <watch expression="getClass().getResource(a3Icon)" language="JAVA" custom="" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/io/DataInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/xstream-1.4.8.jar!/com/thoughtworks/xstream/XStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="837" column="16" selection-start-line="837" selection-start-column="16" selection-end-line="837" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.81474483">
@@ -845,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/javax/swing/JWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -884,13 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="658" column="5" selection-start-line="658" selection-start-column="5" selection-end-line="658" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="910" column="16" selection-start-line="910" selection-start-column="16" selection-end-line="910" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -975,13 +933,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ServerPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/StartPanel.form">
@@ -996,13 +954,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/SettingsPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/view/ServerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
       </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="619" column="39" selection-start-line="619" selection-start-column="39" selection-end-line="619" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RotatedIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ToolManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/StartPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/SettingsPanel.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/SettingsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="59" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+          <folding>
+            <element signature="docComment;class#SettingsPanel#0" expanded="false" />
+            <element signature="method#getInstance#0;class#SettingsPanel#0" expanded="false" />
+            <element signature="method#SettingsPanel#0;class#SettingsPanel#0" expanded="false" />
+            <element signature="e#1426#1427#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="method#createButtonGroup#0;class#SettingsPanel#0" expanded="false" />
+            <element signature="method#createWarehouseCoordinatesTable#0;class#SettingsPanel#0" expanded="false" />
+            <element signature="method#createPaperCornerCoordinatesTable#0;class#SettingsPanel#0" expanded="false" />
+            <element signature="method#setupCellRenderer#0;class#SettingsPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Tool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/MainGUIFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/bluecove-2.1.1-SNAPSHOT.jar!/javax/microedition/io/InputConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1827957">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="62" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66199374">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/bluecove-2.1.1-SNAPSHOT.jar!/javax/bluetooth/DiscoveryAgent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1891348">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/bluecove-2.1.1-SNAPSHOT.jar!/javax/microedition/io/StreamConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18345323">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/bluecove-2.1.1-SNAPSHOT.jar!/com/intel/bluetooth/BluetoothStack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2142857">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/bluecove-2.1.1-SNAPSHOT.jar!/javax/bluetooth/LocalDevice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027597403">
+          <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07931571">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,45 +1103,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/SettingsPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ModelManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#getInstance#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#SettingsPanel#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#setDefaultSettings#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#setupRadioButtonGroups#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#createButtonGroup#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#createWarehouseCoordinatesTable#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#createPaperCornerCoordinatesTable#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#createTable#0;class#SettingsPanel#0" expanded="false" />
-            <element signature="method#setupCellRenderer#0;class#SettingsPanel#0" expanded="false" />
-          </folding>
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/StartPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#StartPanel#0" expanded="false" />
-            <element signature="method#getInstance#0;class#StartPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ServerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#ServerPanel#0" expanded="false" />
-            <element signature="method#getInstance#0;class#ServerPanel#0" expanded="false" />
-            <element signature="method#setupCodeTextArea#0;class#ServerPanel#0" expanded="false" />
+            <element signature="docComment;class#CodeCreator#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#creteCode#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#writeDataToFile#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#setupPaperFormat#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#checkOrientation#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#createListToPrint#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#checkIfLastPoint#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#checkFirstPoint#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#startDrawNewShape#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#changeAction#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#changeTool#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#getGetToolMethod#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#getStartCode#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#setNextPoint#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#getExitCode#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#getToolFromWarehouse#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#printSummary#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#printPaperOrientationInfo#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#printPaperFormatInfo#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#printGripperInfo#0;class#CodeCreator#0" expanded="false" />
+            <element signature="method#printConstPoints#0;class#CodeCreator#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1060,88 +1145,21 @@
     <entry file="file://$PROJECT_DIR$/src/controller/ButtonManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
           <folding>
-            <element signature="docComment;class#ButtonManager#0" expanded="false" />
-            <element signature="method#ButtonManager#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#getInstance#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#setupJBtnClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#setupRadioButtonsClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#setupCheckBoxClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onTurnOnBtnClick#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onBackToSettingsBtnClick#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onA3PaperFormatBtnClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onA4PaperFormatBtnClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onHorizontallyBtnClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#onVerticallyBtnClickListeners#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#checkSettings#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#getWarehouseCoordinates#0;class#ButtonManager#0" expanded="false" />
-            <element signature="method#getPaperCornerCoordinates#0;class#ButtonManager#0" expanded="false" />
+            <element signature="e#3480#3481#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/MainGUIFrame.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33278418">
+          <caret line="459" column="11" selection-start-line="459" selection-start-column="11" selection-end-line="459" selection-end-column="11" />
           <folding>
-            <element signature="docComment;class#MainGUIFrame#0" expanded="false" />
-            <element signature="method#MainGUIFrame#0;class#MainGUIFrame#0" expanded="false" />
-            <element signature="method#getInstance#0;class#MainGUIFrame#0" expanded="false" />
-            <element signature="method#changeView#0;class#MainGUIFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="docComment;class#WaitThread#0" expanded="false" />
-            <element signature="method#waitingForConnection#0;class#WaitThread#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/btConection/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#ConnectionManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ToolManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/RotatedIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;class#RotatedIcon#0" expanded="false" />
-            <element signature="class#Rotate#0;class#RotatedIcon#0" expanded="false" />
-            <element signature="docComment;method#RotatedIcon#0;class#RotatedIcon#0" expanded="false" />
-            <element signature="method#paintIcon#0;class#RotatedIcon#0" expanded="false" />
+            <element signature="e#15480#15481#0" expanded="true" />
+            <element signature="e#15546#15547#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,66 +1167,28 @@
     <entry file="file://$PROJECT_DIR$/src/model/btConection/ProcessConnectionThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
-            <element signature="docComment;class#ProcessConnectionThread#0" expanded="false" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ModelManager.java">
+    <entry file="file://$PROJECT_DIR$/src/model/btConection/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreatorHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/model/btConection/WaitThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.8252788">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
-            <element signature="docComment;class#CodeCreatorHelper#0" expanded="false" />
-            <element signature="method#createCommand#0;class#CodeCreatorHelper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/codeCreator/CodeCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6714579">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="docComment;class#CodeCreator#0" expanded="false" />
-            <element signature="method#getInstance#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#prepareInputData#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#creteCode#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#writeDataToFile#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#setupPaperFormat#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#rescaleDraw#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#checkOrientation#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#splitString#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#createListToPrint#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#checkIfLastPoint#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#checkFirstPoint#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#startDrawNewShape#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#getToolFromWarehouse#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printSummary#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printWarehouseSettingsInfo#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printIfNoColorChanging#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printPaperOrientationInfo#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printPaperFormatInfo#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printGripperInfo#0;class#CodeCreator#0" expanded="false" />
-            <element signature="method#printConstPoints#0;class#CodeCreator#0" expanded="false" />
+            <element signature="docComment;class#WaitThread#0" expanded="false" />
           </folding>
         </state>
       </provider>

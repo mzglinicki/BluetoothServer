@@ -1,7 +1,6 @@
 package model.btConection;
 
 import model.Constants;
-import model.btConection.ProcessConnectionThread;
 import view.ServerPanel;
 
 import javax.bluetooth.DiscoveryAgent;
@@ -10,13 +9,14 @@ import javax.bluetooth.UUID;
 import javax.microedition.io.Connector;
 import javax.microedition.io.StreamConnection;
 import javax.microedition.io.StreamConnectionNotifier;
+import java.io.IOException;
 
 /**
  * Created by mzglinicki.96 on 18.05.2016.
  */
 public class WaitThread implements Runnable {
 
-    private volatile boolean stopThread = false;
+    private StreamConnection connection;
 
     public WaitThread() {
     }
@@ -32,41 +32,31 @@ public class WaitThread implements Runnable {
         final String uuidValue = "04c6093b00001000800000805f9b34fb";
         final String remoteBluetooth = ";name=RemoteBluetooth";
 
-        // retrieve the local Bluetooth device object
         LocalDevice localDevice;
         StreamConnectionNotifier notifier;
-        StreamConnection connection;
 
-        // setup the server to listen for connection
         try {
-            localDevice = LocalDevice.getLocalDevice();
-            localDevice.setDiscoverable(DiscoveryAgent.GIAC);
+//            localDevice = LocalDevice.getLocalDevice();
+//            localDevice.setDiscoverable(DiscoveryAgent.GIAC);
 
             final UUID uuid = new UUID(uuidValue, false);
             final String url = localhost + uuid.toString() + remoteBluetooth;
             notifier = (StreamConnectionNotifier) Connector.open(url);
 
-        } catch (Exception e) {
+        } catch (final Exception e) {
             e.printStackTrace();
             return;
         }
 
-        // waiting for connection
-        while (!stopThread) {
-            try {
-                ServerPanel.getInstance().writeMessage(Constants.WAITING_FOR_INPUT_DATA);
-                connection = notifier.acceptAndOpen();
+        try {
+            ServerPanel.getInstance().writeMessage(Constants.WAITING_FOR_INPUT_DATA);
+            connection = notifier.acceptAndOpen();
 
-                Thread processThread = new Thread(new ProcessConnectionThread(connection));
-                processThread.start();
-            } catch (Exception e) {
-                e.printStackTrace();
-                return;
-            }
+            final Thread processThread = new Thread(new ProcessConnectionThread(connection));
+            processThread.start();
+            notifier.close();
+        } catch (final Exception e) {
+            e.printStackTrace();
         }
-    }
-
-    public void stopWaitingThread() {
-        stopThread = true;
     }
 }

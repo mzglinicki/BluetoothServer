@@ -6,7 +6,7 @@ package model.btConection;
 public class ConnectionManager {
 
     private static ConnectionManager manager = null;
-    private Thread waitThread;
+    WaitThread waitThread = new WaitThread();
 
     private ConnectionManager() {
     }
@@ -19,12 +19,12 @@ public class ConnectionManager {
     }
 
     public void startWaitThread() {
-        waitThread = new Thread(new WaitThread());
-        waitThread.start();
+
+        final Thread thread = new Thread(waitThread);
+        thread.start();
     }
 
-    public void stopThread() {
-        final WaitThread waitThread = new WaitThread();
-        waitThread.stopWaitingThread();
-    }
+//    public void startProcessConnection(){
+//        waitThread.startProcessConnection();
+//    }
 }

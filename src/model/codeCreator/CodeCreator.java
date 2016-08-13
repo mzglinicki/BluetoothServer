@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static model.codeCreator.CodeCreatorHelper.*;
+
 /**
  * Created by mzglinicki.96 on 30.05.2016.
  */
@@ -147,14 +149,15 @@ public class CodeCreator {
         final List<Point> coordinatesList = new ArrayList<>();
 
         if (listOfPoints != null) {
-            Pattern pattern = Pattern.compile("(\\d+)|(\\-\\d)");
-            Matcher matcher = pattern.matcher(listOfPoints);
+            final Pattern pattern = Pattern.compile("(\\d+)|(\\-\\d)");
+            final Matcher matcher = pattern.matcher(listOfPoints);
             while (matcher.find()) {
                 int x = Integer.parseInt(matcher.group().trim());
                 matcher.find();
                 int y = Integer.parseInt(matcher.group().trim());
                 coordinatesList.add(new Point(x, y));
             }
+            coordinatesList.remove(coordinatesList.size() - 1);
         }
         return coordinatesList;
     }
@@ -230,17 +233,18 @@ public class CodeCreator {
 
     private void changeAction(final int currentXValue) {
 
-        if (currentXValue != currentColor) {
-            for (final CodeCreatorHelper codeCreatorHelper : CodeCreatorHelper.values()) {
+        if (currentXValue == currentColor) {
+            return;
+        }
+        for (final CodeCreatorHelper codeCreatorHelper : values()) {
 
-                if (codeCreatorHelper.getCommandId() == currentXValue) {
-
-                    if (currentXValue == CodeCreatorHelper.EndOfShape.getCommandId()) {
-                        changeColor = false;
-                    } else {
-                        changeTool(currentXValue);
-                    }
-                }
+            if (codeCreatorHelper.getCommandId() != currentXValue) {
+                continue;
+            }
+            if (currentXValue == EndOfShape.getCommandId()) {
+                changeColor = false;
+            } else {
+                changeTool(currentXValue);
             }
         }
     }
@@ -349,11 +353,12 @@ public class CodeCreator {
     }
 
     private void printEveryUsedTools(final int toolId, final JTextArea codeTextArea) {
-        if (usedTools.contains(toolId)) {
-            for (final CodeCreatorHelper codeCreatorHelper : CodeCreatorHelper.values()) {
-                if (codeCreatorHelper.getCommandId() == toolId) {
-                    codeTextArea.append(Constants.WAREHOUSE + codeCreatorHelper.ordinal() + colon + codeCreatorHelper.getCommand());
-                }
+        if (!usedTools.contains(toolId)) {
+            return;
+        }
+        for (final CodeCreatorHelper codeCreatorHelper : values()) {
+            if (codeCreatorHelper.getCommandId() == toolId) {
+                codeTextArea.append(Constants.WAREHOUSE + codeCreatorHelper.ordinal() + colon + codeCreatorHelper.getColorName());
             }
         }
     }

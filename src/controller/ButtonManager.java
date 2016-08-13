@@ -2,11 +2,14 @@ package controller;
 
 import model.ModelManager;
 import model.RotatedIcon;
+import model.btConection.ConnectionManager;
+import model.btConection.ProcessConnectionThread;
 import view.ServerPanel;
 import view.SettingsPanel;
 import view.StartPanel;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,14 +23,12 @@ public class ButtonManager {
     private final SettingsPanel settingsPanel = SettingsPanel.getInstance();
     private final ServerPanel serverPanel = ServerPanel.getInstance();
     private final ModelManager modelManager = ModelManager.getInstance();
+    private final ConnectionManager connectionManager = ConnectionManager.getInstance();
 
-    private final JButton turnServerOnBtn = settingsPanel.getTurnOnBtn();
     private final JRadioButton a4PaperFormat = settingsPanel.getA4PaperFormat();
     private final JRadioButton a3PaperFormat = settingsPanel.getA3PaperFormat();
     private final JRadioButton horizontally = settingsPanel.getHorizontally();
     private final JRadioButton vertically = settingsPanel.getVertically();
-    private final JCheckBox warehouseCheckBox = settingsPanel.getWarehouseCheckBox();
-    private final JCheckBox paperCoordinatesCheckBox = settingsPanel.getPaperCoordinatesCheckBox();
     private final JLabel imageLabel = settingsPanel.getImageLabel();
 
     private final boolean[] orientationVertically = {true};
@@ -36,7 +37,6 @@ public class ButtonManager {
     private ButtonManager() {
         setupJBtnClickListeners();
         setupRadioButtonsClickListeners();
-        setupCheckBoxClickListeners();
     }
 
     public static ButtonManager getInstance() {
@@ -51,7 +51,7 @@ public class ButtonManager {
         startPanel.getStartBtn().addActionListener(e -> onStartAppBtnClick());
         startPanel.getCloseBtn().addActionListener(e -> onCloseBtnClick());
 
-        turnServerOnBtn.addActionListener(e -> onTurnOnBtnClick());
+        settingsPanel.getTurnOnBtn().addActionListener(e -> onTurnOnBtnClick());
         settingsPanel.getBackBtn().addActionListener(e -> onBackToStartBtnClick());
         settingsPanel.getCloseBtn().addActionListener(e -> onCloseBtnClick());
 
@@ -66,12 +66,6 @@ public class ButtonManager {
         vertically.addActionListener(e -> onVerticallyBtnClickListeners());
         a4PaperFormat.addActionListener(e -> onA4PaperFormatBtnClickListeners());
         a3PaperFormat.addActionListener(e -> onA3PaperFormatBtnClickListeners());
-    }
-
-    private void setupCheckBoxClickListeners() {
-
-        warehouseCheckBox.addActionListener(e -> checkSettings());
-        paperCoordinatesCheckBox.addActionListener(e -> checkSettings());
     }
 
     private void onStartAppBtnClick() {
@@ -96,11 +90,12 @@ public class ButtonManager {
     }
 
     private void onClearBtnClick() {
+//        connectionManager.startProcessConnection();
+        connectionManager.startWaitThread();
         modelManager.clearTextArea();
     }
 
     private void onBackToSettingsBtnClick() {
-        modelManager.turnOffServer();
         modelManager.changeView(settingsPanel.getMainSettingsJPanel());
     }
 
@@ -135,15 +130,6 @@ public class ButtonManager {
         if (vertically.isSelected() && !orientationVertically[0]) {
             imageLabel.setIcon(modelManager.rotateIcon(RotatedIcon.Rotate.DOWN, (ImageIcon) imageLabel.getIcon()));
             orientationVertically[0] = true;
-        }
-    }
-
-    private void checkSettings() {
-
-        if (warehouseCheckBox.isSelected() && paperCoordinatesCheckBox.isSelected()) {
-            turnServerOnBtn.setEnabled(true);
-        } else {
-            turnServerOnBtn.setEnabled(false);
         }
     }
 

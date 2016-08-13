@@ -1,5 +1,7 @@
 package view;
 
+import model.Constants;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -22,8 +24,6 @@ public class SettingsPanel {
     private JTable paperCornerCoordinatesTable;
     private JTable warehouseCoordinatesTable;
     private JLabel imageLabel;
-    private JCheckBox warehouseCheckBox;
-    private JCheckBox paperCoordinatesCheckBox;
     private JPanel warehouseCoordinates;
     private JPanel warehouseSettings;
     private JPanel gripsPanel;
@@ -88,14 +88,6 @@ public class SettingsPanel {
         return imageLabel;
     }
 
-    public JCheckBox getWarehouseCheckBox() {
-        return warehouseCheckBox;
-    }
-
-    public JCheckBox getPaperCoordinatesCheckBox() {
-        return paperCoordinatesCheckBox;
-    }
-
     public JTable getPaperCornerCoordinatesTable() {
         return paperCornerCoordinatesTable;
     }
@@ -113,15 +105,22 @@ public class SettingsPanel {
     }
 
     private void setDefaultSettings() {
-
         createWarehouseCoordinatesTable();
         createPaperCornerCoordinatesTable();
+        setToolTips();
 
         toolNotInstalled.setSelected(true);
-//        paperNotInstalled.setSelected(true);
         a4PaperFormat.setSelected(true);
         vertically.setSelected(true);
-        turnOnBtn.setEnabled(false);
+    }
+
+    private void setToolTips() {
+        warehouseCoordinatesTable.setToolTipText(Constants.WAREHOUSE_TOOL_TIP);
+        a4PaperFormat.setToolTipText(Constants.PAPER_FORMAT_TOOL_TIP);
+        a3PaperFormat.setToolTipText(Constants.PAPER_FORMAT_TOOL_TIP);
+        horizontally.setToolTipText(Constants.PAPER_ORIENTATION_TOOLO_TIP);
+        vertically.setToolTipText(Constants.PAPER_ORIENTATION_TOOLO_TIP);
+        paperCornerCoordinatesTable.setToolTipText(Constants.PAPER_CORNER_TOOL_TIP);
     }
 
     private void setupRadioButtonGroups() {

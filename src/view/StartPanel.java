@@ -1,5 +1,7 @@
 package view;
 
+import model.Constants;
+
 import javax.swing.*;
 
 /**
@@ -45,6 +47,6 @@ public class StartPanel {
     }
 
     private void setText() {
-        textLabel.setText("Server Delta Draw");
+        textLabel.setText(Constants.START_PANEL_TEXT);
     }
 }

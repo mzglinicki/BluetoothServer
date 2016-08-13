@@ -55,10 +55,6 @@ public class ModelManager {
         connectionManager.startWaitThread();
     }
 
-    public void turnOffServer() {
-        connectionManager.stopThread();
-    }
-
     public void clearTextArea() {
         serverPanel.writeMessage(Constants.WAITING_FOR_INPUT_DATA);
         serverPanel.setTextToCodeTextArea("" + '\u0000');
